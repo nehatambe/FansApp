@@ -1,0 +1,56 @@
+{
+  "stories": [
+    {
+      "firstName": "maddieleel",
+      "lastName": "LastName",
+      "emailAddress": "chinmay.moharir@gmail.com",
+      "location": "2435 Imperial Highway, Brea, CA, United States",
+      "celebrityName": "Blake Lively and Ryan Reynolds",
+      "description": "My family and I were at dinner in New Orleans and realized halfway through dinner we had been seated next to Blake Lively and Ryan Reynolds. After many drinks my mom excused herself to use the restroom.",
+      "storyLike": "7",
+      "storyDislike": "6",
+      "postDate": "2017-04-03T16:18:28-08:00",
+      "PostedSnapURL": "http://res.cloudinary.com/cpsc473/image/upload/q_90/v1491773344/bu44fb9m4bj6icuofups.png",
+      "id": "r1xtLPx6l"
+    },
+    {
+      "firstName": "David",
+      "lastName": "Lname",
+      "emailAddress": "A@G.COM",
+      "location": "2435 Imperial Highway, Brea, CA, United States",
+      "celebrityName": "Orlando Bloom",
+      "description": "When I saw him, the first words out of my mouth (completely unintentionally) were ‘Omg, when I was young, you made me realize I was heterosexual",
+      "storyLike": "2",
+      "storyDislike": "1",
+      "postDate": "2017-04-03T16:42:09-08:00",
+      "PostedSnapURL": "http://res.cloudinary.com/cpsc473/image/upload/q_90/v1491773409/lzzyfzwzlcshzq1xh6iw.jpg",
+      "id": "BkxIhweax"
+    },
+    {
+      "firstName": "Some",
+      "lastName": "Name",
+      "emailAddress": "anjalimutha10@gmail.com",
+      "location": "215 South Harbor Boulevard, Anaheim, CA, United States",
+      "celebrityName": "Shahrukh Khan",
+      "description": "After his show, he said he would meet everybody there. We waited in line, and he was being super nice, laughing and taking pictures with everyone. Right before we got to the stage some fat, redneck a**hole told him that he was funnier back when he was on drugs. It killed his whole vibe. ",
+      "storyLike": "9",
+      "storyDislike": "19",
+      "postDate": "2017-04-03T15:30:05-07:00",
+      "PostedSnapURL": "http://res.cloudinary.com/cpsc473/image/upload/q_90/v1491773300/gy4x9v8dd9l3fcfevtyd.jpg",
+      "id": "rJrQTBl6g"
+    },
+    {
+      "firstName": "Random",
+      "lastName": "Random",
+      "emailAddress": "Random@Random.com",
+      "location": "HJC Helmets, South Harbor Boulevard, La Habra, CA, United States",
+      "celebrityName": "Random",
+      "description": "Random",
+      "storyLike": "1",
+      "storyDislike": "0",
+      "postDate": "2017-04-09T14:24:03-07:00",
+      "PostedSnapURL": "http://res.cloudinary.com/cpsc473/image/upload/q_90/v1491773074/wmzonnabnymloylycism.jpg",
+      "id": "BJeiUQOpx"
+    }
+  ]
+}

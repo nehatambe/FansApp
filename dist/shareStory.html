@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>FANHUB</title>
+    <link rel="icon" href="favi.ico">
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/minimal.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container col s12">
+        <a href="index.html" class="brand-logo"><img src="images/logo.png" width="90" height="60"></a>
+
+        <ul id="nav-mobile" class="side-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shareStory.html">Share Story</a></li>
+            <li><a href="allStories.html">All Stories</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="storyHeader right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shareStory.html">Share Story</a></li>
+            <li><a href="allStories.html">All Stories</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+</nav>
+
+    <div class="container">
+        <div class="section">
+
+            <div class="row">
+                <form class="col s12" data-story="form" name="storyForm">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <label for="firstName" class="mat-label">First Name</label>
+                            <input type="text" class="mat-input" name="firstName" id="firstName" autofocus required>
+                        </div>
+                        <div class="input-field col s6">
+                            <label for="lastName" class="mat-label">Last Name</label>
+                            <input type="text" class="mat-input" name="lastName" id="lastName" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" name="emailAddress" type="email" class="validate" placeholder="abc@who.com" required>
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <label for="location" class="mat-label">Location</label>
+                            <input type="text" name="location" placeholder="Enter a location" class="mat-input" id="autocomplete" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <label for="celebrityName" class="mat-label">Celebrity Name</label>
+                            <input type="text" name="celebrityName" class="mat-input" id="celebrityName" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <label for="textarea">Description</label>
+                            <textarea id="textarea" name="description" class="materialize-textarea" required></textarea>
+                        </div>
+                    </div>
+                    <input type="text" name="storyLike" value="0" hidden="true" class="mat-input">
+                    <input type="text" name="storyDislike" value="0" hidden="true" class="mat-input">
+                    <input type="text" name="postDate" id="storyDate" hidden="true" class="mat-input">
+                    <div class="file-field input-field">
+                        <div class="btn">
+                            <a href="#" id="celebImage" name="celebImage"><span>Image Upload</span></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <img height="150" width="200" id="imgPreview" alt="Image preview">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button class="btn waves-effect waves-light" type="submit" name="action"> Post
+                    </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br><br>
+    </div>
+
+    <footer class="page-footer orange">
+        <div class="footer-copyright">
+            <div class="container">
+                Made by <a class="orange-text text-lighten-3">Dev Anjali Chinmay Neha</a>
+            </div>
+        </div>
+    </footer>
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyGSYGWRnavbCTiEseGgLrv8CzyDywAN0&libraries=places"></script>
+    <script src="//widget.cloudinary.com/global/all.js" charset="utf-8"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/validation.js" charset="utf-8"></script>
+    <script src="js/remotedatastore.js" charset="utf-8"></script>
+    <script src="js/formhandler.js" charset="utf-8"></script>
+    <script src="js/story.js" charset="utf-8"></script>
+    <script src="js/celebAPISearchHandler.js"></script>
+    <script src="js/celebsCards.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+    <script type="text/javascript">
+        new google.maps.places.Autocomplete(document.getElementById('autocomplete'));
+        window.onload = function() {
+            document.getElementById("storyDate").value = moment().format();
+        }
+    </script>
+</body>
+
+</html>
